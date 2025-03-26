@@ -23,10 +23,11 @@ kind: Service
 metadata:
   name: my-app-service
 spec:
-  type: LoadBalancer  # Change to NodePort if LoadBalancer is unavailable
+  type: NodePort  # Change to NodePort if LoadBalancer is unavailable
   selector:
     app: my-app
   ports:
     - protocol: TCP
       port: 8088        # External port (Kubernetes Service port)
       targetPort: 8088  # Internal port (Your Docker container's exposed port)
+      nodePort: 30088 
