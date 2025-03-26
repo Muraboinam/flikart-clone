@@ -29,5 +29,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8088        # External port (Kubernetes Service port)
-      targetPort: 8088  # Internal port (Your Docker container's exposed port)
+      targetPort: 80  # Internal port (Your Docker container's exposed port)
       nodePort: 30088 
