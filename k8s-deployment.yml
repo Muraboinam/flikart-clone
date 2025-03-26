@@ -16,7 +16,7 @@ spec:
         - name: my-app
           image: maheshmu/flipkart:v1  # Change to your actual image
           ports:
-            - containerPort: 8088  # This should match the port your Docker container exposes
+            - containerPort: 80  # This should match the port your Docker container exposes
 ---
 apiVersion: v1
 kind: Service
